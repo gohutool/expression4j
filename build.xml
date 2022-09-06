@@ -1,0 +1,82 @@
+<project name="Exceoon-Expression" default="usage" basedir=".">
+    <description>
+        Formula Components build xml
+    </description>
+
+  <property name="tools" value="tools"/>
+  
+  <!-- set global properties for this build -->
+  <property name="src" value="src"/>
+  <property name="lib" value="lib"/>
+  <property name="dist"  value="dist"/>
+  <property name="classes" value="classes"/>
+  <property name="conf" value="conf"/>
+  <property name="name" value="exceoon-formula"/>
+
+  <target name="clean">
+	 <delete dir="${dist}" failonerror="false"/>
+  </target>
+
+  <target name="build">
+	  <echo message="Build ${name} now."/>
+	  <mkdir dir="${dist}/${classes}"/>
+	  <mkdir dir="${dist}/${lib}"/>
+	  <unzip dest="${dist}/classes"> 
+		<fileset dir="${lib}">  
+			<include name="expression4j.jar"/>
+		</fileset>
+	  </unzip>
+	  <javac srcdir="src" destdir="${dist}/${classes}" encoding="utf-8" debug="yes">
+		<classpath>
+		  <pathelement path="${dist}/${classes}"/>
+		  <fileset dir="${lib}">
+			<include name="**/*.jar"/>
+		  </fileset>      
+		</classpath>
+		<compilerarg value="-Xlint:unchecked"/>
+	  </javac>
+	  <copy todir="${dist}/${classes}" overwrite="true">
+		<fileset dir="${src}">
+		  <exclude name="**/.svn/**"/>
+		  <exclude name="**/*.java"/>
+		</fileset>
+	  </copy>
+	  <copy todir="${dist}/${lib}" failonerror="false" overwrite="true">
+		<fileset dir="${lib}">
+		  <exclude name="**/.svn/**"/>
+		</fileset>
+	  </copy>
+	  <!--
+	  <jar destfile="${common}/${dist}/${common}.jar"
+	   basedir="${common}/${dist}/${classes}"
+	   excludes="**/Test.class"/>
+	   -->
+	  <jar destfile="${dist}/${name}.jar"
+	   basedir="${dist}/${classes}">
+	    <manifest>
+		  <attribute name="Built-By" value="Liu.yong"/>
+		  <attribute name="Extension-Name" value="Formula Compoent"/>
+		  <attribute name="Implementation-Title" value="Formula Compoent"/>
+		  <attribute name="Implementation-Vendor" value="Exceoon inc."/>		  
+		  <attribute name="Implementation-Version" value="0.9.1"/>		  
+		  <attribute name="Specification-Title" value="Formula Compoent"/>
+		  <attribute name="Specification-Vendor" value="Exceoon inc."/>
+		  <attribute name="Specification-Version" value="0.9.1"/>
+		</manifest>
+		</jar>
+  </target>
+
+  <target name="usage"
+        description="Usage of ant target" >
+		<echo message="###################################################################"/>
+		<echo message="######################## Usage of these tasks #####################"/>
+		<echo message="###################################################################"/>
+		<echo message="Usags: ant [options]"/>
+		<echo message="All options:"/>
+		<echo message="clean      Clean up ${name} project distribute files."/>
+		<echo message="build   Clean up ${name} project distribute files."/>
+		<echo message="build2   Clean up ${name2} project distribute files."/>
+		<echo message="###################################################################"/>
+		<echo message="###################################################################"/>
+  </target>
+</project>
