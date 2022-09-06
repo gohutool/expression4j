@@ -58,7 +58,7 @@ import fr.expression4j.factory.OperatorManagerFactory;
 import fr.expression4j.sample.custom.element.StringExpressionElement;
 
 /**
- * @author geniusadmin
+ * @author exceoonadmin
  *
  */
 public class ExpressionUtils

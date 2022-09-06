@@ -9,7 +9,7 @@ import fr.expression4j.core.exception.EvalException;
 import fr.expression4j.sample.custom.operator.BooleanMathematicalElement;
 
 /**
- * @author geniusadmin
+ * @author exceoonadmin
  *
  */
 public class OperatorEqualImpl implements OperatorImpl

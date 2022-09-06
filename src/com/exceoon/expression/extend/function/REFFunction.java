@@ -12,7 +12,7 @@ import fr.expression4j.core.Parameters;
 import fr.expression4j.core.exception.EvalException;
 
 /**
- * @author geniusadmin
+ * @author exceoonadmin
  *
  */
 public class REFFunction extends EconomicFunction

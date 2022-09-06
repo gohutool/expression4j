@@ -14,7 +14,7 @@ import fr.expression4j.sample.custom.element.StringMathematicalElement;
 import fr.expression4j.sample.custom.operator.BooleanMathematicalElement;
 
 /**
- * @author geniusadmin
+ * @author exceoonadmin
  *
  */
 public class FormulaParameters implements Serializable

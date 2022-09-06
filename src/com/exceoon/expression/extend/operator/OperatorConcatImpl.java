@@ -9,7 +9,7 @@ import fr.expression4j.core.exception.EvalException;
 import fr.expression4j.sample.custom.element.StringMathematicalElement;
 
 /**
- * @author geniusadmin
+ * @author exceoonadmin
  *
  */
 public class OperatorConcatImpl implements OperatorImpl

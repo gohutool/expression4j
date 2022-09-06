@@ -19,7 +19,7 @@ import fr.expression4j.core.exception.ParametersException;
 import fr.expression4j.factory.NumberFactory;
 
 /**
- * @author geniusadmin
+ * @author exceoonadmin
  *
  */
 public class AVGFunction extends EconomicFunction

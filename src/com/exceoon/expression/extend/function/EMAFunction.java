@@ -16,7 +16,7 @@ import fr.expression4j.core.exception.EvalException;
 import fr.expression4j.core.exception.ParametersException;
 
 /**
- * @author geniusadmin
+ * @author exceoonadmin
  *
  */
 public class EMAFunction extends EconomicFunction

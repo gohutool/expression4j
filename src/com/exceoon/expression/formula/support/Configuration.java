@@ -6,7 +6,7 @@ package com.exceoon.expression.formula.support;
 import java.util.Properties;
 
 /**
- * @author geniusadmin
+ * @author exceoonadmin
  *
  */
 public class Configuration

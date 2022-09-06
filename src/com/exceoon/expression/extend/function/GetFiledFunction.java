@@ -18,7 +18,7 @@ import fr.expression4j.factory.NumberFactory;
 import fr.expression4j.util.ParameterUtil;
 
 /**
- * @author geniusadmin
+ * @author exceoonadmin
  *
  */
 public class GetFiledFunction extends AbstractFunction

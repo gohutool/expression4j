@@ -4,7 +4,7 @@
 package com.exceoon.expression.formula;
 
 /**
- * @author geniusadmin
+ * @author exceoonadmin
  *
  */
 public class FormulaParsingExcption extends Exception

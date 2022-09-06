@@ -4,7 +4,7 @@
 package com.exceoon.expression.formula.support;
 
 /**
- * @author geniusadmin
+ * @author exceoonadmin
  *
  */
 public class RelatedFieldInfo

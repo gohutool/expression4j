@@ -11,7 +11,7 @@ import fr.expression4j.basic.MathematicalElement;
 import fr.expression4j.basic.MathematicalException;
 
 /**
- * @author geniusadmin
+ * @author exceoonadmin
  *
  */
 public class ObjectArrayMathematicalElement<T> implements MathematicalElement

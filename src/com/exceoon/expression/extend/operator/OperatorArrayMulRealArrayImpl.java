@@ -14,7 +14,7 @@ import fr.expression4j.basic.OperatorImpl;
 import fr.expression4j.core.exception.EvalException;
 
 /**
- * @author geniusadmin
+ * @author exceoonadmin
  *
  */
 public class OperatorArrayMulRealArrayImpl implements OperatorImpl
